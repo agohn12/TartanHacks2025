@@ -15,7 +15,7 @@ NegativeEmotions = ["angry", "sad", "disgust", "fear"]
 // Define the async function
 async function getEmotions() {
     try {
-        const response = await fetch('http://127.0.0.1:5000/get_emotions'); // Adjust URL for your server
+        const response = await fetch('http://127.0.0.1:5000/get_emotions');
         const data = await response.json();
         //console.log('Response from Python:', data.dominant_emotion);
         currentEmotion = data.dominant_emotion
@@ -49,8 +49,13 @@ function getNextProblem() {
 function displayProblem()
 {
     number1.textContent = num1;
-    number2.textContent = num2;
+    number2.textContent = "+ " + num2;
     line.textContent = "------------------------";
+
+    board.innerHTML = '';         
+    board.appendChild(number1);     
+    board.appendChild(line);            
+    board.appendChild(number2);
 }
 
 // Set up window.onload
@@ -58,5 +63,4 @@ window.onload = function() {
     getEmotions();  // Call the function when the page has loaded
     displayProblem();
     setInterval(getEmotions, 5000);
-
 };

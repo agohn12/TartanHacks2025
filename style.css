@@ -3,11 +3,6 @@ body {
   padding: 0;
   height: 100%;
   display: flex;
-<<<<<<< HEAD
-=======
-  justify-content: center; 
-  align-items: center;
->>>>>>> ec47cef1b2cafb4d9db215abc259eb387a1c9053
   font-family: 'Arial', sans-serif;
   background-color: #f3f4f6;
   color: #333;
