@@ -11,7 +11,7 @@ const submitBtn = document.querySelector('.submit-btn');
 submitBtn.addEventListener('click', checkAnswer);
 const number1 = document.createElement('h3');
 const number2 = document.createElement('h3');
-const line = document.createElement('h3');
+const line = document.createElement('h4');
 
 positiveEmotions = ["happy", "surprise", "neutral"]
 NegativeEmotions = ["angry", "sad", "disgust", "fear"]
@@ -66,14 +66,14 @@ function getNextProblem() {
 
 function displayProblem()
 {
-    number1.textContent = num1 + "\n";
-    number2.textContent = "+ " + num2 + "\n";
-    line.textContent = "------------------------";
+    number1.textContent = num1;
+    number2.textContent = "+ " + num2;
+    line.textContent = "____________";
 
     board.innerHTML = '';         
-    board.appendChild(number1);     
-    board.appendChild(line);            
+    board.appendChild(number1);          
     board.appendChild(number2);
+    board.appendChild(line);
 }
 
 // Set up window.onload
