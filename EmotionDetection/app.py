@@ -40,4 +40,4 @@ def get_emotions():
             return jsonify({"dominant_emotion": max_emotion, "count": max_count})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False, threaded=True)
