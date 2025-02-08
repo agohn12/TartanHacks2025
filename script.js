@@ -61,8 +61,8 @@ function getNextProblem() {
 
 function displayProblem()
 {
-    number1.textContent = num1 + "<br>";
-    number2.textContent = "+ " + num2 + "<br>";
+    number1.textContent = num1 + "\n";
+    number2.textContent = "+ " + num2 + "\n";
     line.textContent = "------------------------";
 
     board.innerHTML = '';         
