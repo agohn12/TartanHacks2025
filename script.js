@@ -8,7 +8,7 @@ positiveEmotions = ["happy", "surprise", "neutral"]
 NegativeEmotions = ["angry", "sad", "disgust", "fear"]
 
 // Define the async function
-async function callPythonFunction() {
+async function getEmotions() {
     try {
         const response = await fetch('http://127.0.0.1:5000/get_emotions'); // Adjust URL for your server
         const data = await response.json();
@@ -45,6 +45,7 @@ function getNextProblem() {
 
 // Set up window.onload
 window.onload = function() {
-    callPythonFunction();  // Call the function when the page has loaded
-    setInterval(callPythonFunction, 5000);
+    getEmotions();  // Call the function when the page has loaded
+    setInterval(getEmotions, 5000);
+    
 };
