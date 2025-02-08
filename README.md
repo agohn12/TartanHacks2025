@@ -19,3 +19,5 @@ In the future we hope to add more features including:
 
 # Images!
 <img width="1510" alt="Screenshot 2025-02-08 at 4 05 19 PM" src="https://github.com/user-attachments/assets/8ac9a2e5-5c09-4193-ad0c-c330afed26ff" />
+![image](https://github.com/user-attachments/assets/ecf8dd57-cb6c-4db9-b65a-7efdc965bb3f)
+
