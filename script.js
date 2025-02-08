@@ -2,7 +2,12 @@
 let currentEmotion = "neutral";
 let currentLevel = 1;
 let correctAnswer = false;
-let problem = [1, 1];
+let num1 = "" + 1;
+let num2 = "" + 1;
+const board = document.getElementById("placeholder-box");
+const number1 = document.createElement('h3');
+const number2 = document.createElement('h3');
+const line = document.createElement('h3');
 
 positiveEmotions = ["happy", "surprise", "neutral"]
 NegativeEmotions = ["angry", "sad", "disgust", "fear"]
@@ -39,13 +44,19 @@ function getNextProblem() {
         num1 = Math.floor(Math.random() * (90)) + 10;
         num2 = Math.floor(Math.random() * (90)) + 10;
     }
+}
 
-    return [num1, num2];
+function displayProblem()
+{
+    number1.textContent = num1;
+    number2.textContent = num2;
+    line.textContent = "------------------------";
 }
 
 // Set up window.onload
 window.onload = function() {
     getEmotions();  // Call the function when the page has loaded
+    displayProblem();
     setInterval(getEmotions, 5000);
-    
+
 };
