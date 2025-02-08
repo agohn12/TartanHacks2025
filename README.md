@@ -18,3 +18,4 @@ In the future we hope to add more features including:
 * New "Tips from Hooter" feature that utilizes generative AI to help student's through problems
 
 # Images!
+<img width="1510" alt="Screenshot 2025-02-08 at 4 05 19 PM" src="https://github.com/user-attachments/assets/8ac9a2e5-5c09-4193-ad0c-c330afed26ff" />
