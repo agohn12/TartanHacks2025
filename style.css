@@ -69,14 +69,18 @@ body {
   max-width: 600px;
 }
 
-.title {
-  font-size: 24px;
+.title, .title2 {
+  font-size: 32px;
   color: #4CAF50;
   font-weight: bold;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.title2 {
+  font-size: 26px;
 }
 
 .title p {
@@ -150,6 +154,7 @@ h4 {
   justify-content: center;
   align-items: center;
   margin: 20px;
+  margin-top: 50px;
   padding: 20px;
   margin-left: 0px;
   height: 600px;
