@@ -1,7 +1,5 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS
-import openai
-openai.api_key = '<OPENAI_API_KEY>'
 from deepface import DeepFace
 import cv2
 import time

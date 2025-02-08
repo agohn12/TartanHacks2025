@@ -1,4 +1,3 @@
-
 let currentEmotion = "neutral";
 let currentLevel = 1;
 let num1 = 1;
@@ -35,7 +34,7 @@ async function getEmotions() {
         }
         
     } catch (error) {
-        console.error('Error calling Python function:', error);
+        console.error('Error calling getEmotions:', error);
     }
 }
 
@@ -57,7 +56,7 @@ function checkAnswer()
     {
        currentLevel -= 2;
     }
-    else if (PositiveEmotions.includes(currentEmotion) && currentLevel > 1)
+    else if (positiveEmotions.includes(currentEmotion) && currentLevel > 1)
     {
         currentLevel--;
     }
