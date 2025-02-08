@@ -32,6 +32,8 @@ async function getEmotions() {
 function checkAnswer()
 {
     const userAnswer = parseInt(answerBox.value.trim(), 10);
+
+    if ()
 }
 
 function getNextProblem() {
