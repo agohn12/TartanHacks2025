@@ -27,7 +27,7 @@ async function getEmotions() {
         console.log(data.dominant_emotion);
         if (positiveEmotions.includes(currentEmotion))
         {
-            emotionDisplay.innerHTML = "You're doing <br> amazing!! Keep up <br> the good work!";
+            emotionDisplay.innerHTML = "You're doing <br> amazing!! Keep <br> up the good <br> work!";
         }
         else
         {
