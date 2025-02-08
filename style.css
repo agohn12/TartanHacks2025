@@ -3,8 +3,6 @@ body {
   padding: 0;
   height: 100%;
   display: flex;
-  #justify-content: center; 
-  #align-items: center;
   font-family: 'Arial', sans-serif;
   background-color: #f3f4f6;
   color: #333;
@@ -12,7 +10,7 @@ body {
 
 .owl {
 	height: 500px;
-	padding: 50px;
+	padding: 20px;
 	padding-right: 0px;
 	margin-top: 50px;
 }
@@ -50,7 +48,7 @@ body {
 	text-align: top;
 }
 
-.placeholder-box {
+#placeholder-box {
   height: 50vh;
   padding: 20px;
   border: 2px dashed #ccc;
