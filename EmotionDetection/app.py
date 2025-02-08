@@ -1,8 +1,13 @@
+from flask import Flask, jsonify
+from flask_cors import CORS
 from deepface import DeepFace
 import cv2
 import time
 
+app = Flask(__name__)
+CORS(app)
 
+@app.route('/get_emotions', methods=['GET'])
 def get_emotions():
     vid = cv2.VideoCapture(0)
     frames_to_analyze = 15
@@ -32,9 +37,7 @@ def get_emotions():
             max_count = emotion_counts[max_emotion]
             emotion_counts = {emotion: 0 for emotion in emotion_counts}
             print(f"'{max_emotion}' '{max_count}'")
+            return jsonify({"dominant_emotion": max_emotion, "count": max_count})
 
-
-
-
-get_emotions()
-
+if __name__ == "__main__":
+    app.run(debug=True)
