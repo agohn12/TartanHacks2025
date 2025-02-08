@@ -8,6 +8,7 @@ let ans = num1 + num2;
 let user_ans = "";
 submitBtn.addEventListener('click', checkAnswer);
 const board = document.getElementById("placeholder-box");
+const answerBox = document.querySelector('.answer-box');
 const number1 = document.createElement('h3');
 const number2 = document.createElement('h3');
 const line = document.createElement('h3');
@@ -30,7 +31,7 @@ async function getEmotions() {
 
 function checkAnswer()
 {
-    
+    const userAnswer = parseInt(answerBox.value.trim(), 10);
 }
 
 function getNextProblem() {
