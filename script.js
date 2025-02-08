@@ -4,6 +4,9 @@ let currentLevel = 1;
 let correctAnswer = false;
 let num1 = "" + 1;
 let num2 = "" + 1;
+let ans = num1 + num2;
+let user_ans = "";
+submitBtn.addEventListener('click', checkAnswer);
 const board = document.getElementById("placeholder-box");
 const number1 = document.createElement('h3');
 const number2 = document.createElement('h3');
@@ -25,6 +28,11 @@ async function getEmotions() {
     }
 }
 
+function checkAnswer()
+{
+    
+}
+
 function getNextProblem() {
     num1 = 1;
     num2 = 1;
@@ -44,6 +52,8 @@ function getNextProblem() {
         num1 = Math.floor(Math.random() * (90)) + 10;
         num2 = Math.floor(Math.random() * (90)) + 10;
     }
+
+    ans = num1 + num2;
 }
 
 function displayProblem()
@@ -60,7 +70,7 @@ function displayProblem()
 
 // Set up window.onload
 window.onload = function() {
-    getEmotions();  // Call the function when the page has loaded
+    getEmotions();
     displayProblem();
     setInterval(getEmotions, 5000);
 };
