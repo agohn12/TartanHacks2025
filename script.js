@@ -27,11 +27,11 @@ async function getEmotions() {
         console.log(data.dominant_emotion);
         if (positiveEmotions.includes(currentEmotion))
         {
-            emotionDisplay.textContent = `You're doing amazing!! Keep up the good work!`;
+            emotionDisplay.innerHTML = "You're doing <br> amazing!! Keep up <br> the good work!";
         }
         else
         {
-            emotionDisplay.textContent = "It's ok to feel frustrated but I believe in you!";
+            emotionDisplay.innerHTML = "It's ok to feel <br> frustrated but <br> I believe in you!";
         }
         
     } catch (error) {
